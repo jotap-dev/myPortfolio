@@ -8,10 +8,35 @@
 
 :root{
     font-size: 20px;
+    
 }
 
+@keyframes entering {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
 
-body{
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+::-webkit-scrollbar-track {
+    background-color: #c7c7c700;
+  }
+  
+::-webkit-scrollbar-thumb{
+    background-color: #7a7a7a;
+    border-radius: 6px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{  
     width: 100%;
     height: 100vh;
     font-family: 'poppins', sans-serif;
@@ -37,6 +62,7 @@ body{
     background-size: 50%;
 
     box-shadow: 0 0 3px 1px rgb(85, 85, 85);
+    cursor: pointer;
 }
 
 section.mainSection{
@@ -49,7 +75,7 @@ section.mainSection{
     background-color: rgb(39, 39, 39);
     width: 100%;
     height: 10%;
-    padding: 0 200px;
+    padding: 0 10%;
 
     display: flex;
     justify-content: space-between;
@@ -102,26 +128,28 @@ section.mainSection{
 .infoContainer{
     width: 75%;
     height: 75%;
-    border-radius: 25px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 30px;
+    justify-content: center;
+    gap: 3%;
     background-color: rgb(60, 60, 60);
     box-shadow: 0 0 5px 0px rgb(122, 122, 122);
+    transition: 1s ease-in-out;
+    animation: entering 1s ease-in-out;
 }
 
 .meInfo strong{
     font-size: 1.2rem;
 }
 
-.meInfo img{
+.infoContainer > img{
     width: 120px;
     height: 120px;
     border-radius: 50%;
     border: 3px solid rgba(255, 0, 0, 0);
-    box-shadow: 0 0 0 2px rgb(0, 14, 207);
+    box-shadow: 0 0 0 3px rgb(0, 14, 207);
 }
 
 .meInfo small{
@@ -131,7 +159,17 @@ section.mainSection{
 
 .meInfo h1{
     font-size: 1.4rem;
+    font-weight: 400;
     letter-spacing: 2px;
+}
+
+.infoContainer p{
+    width: 80%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 .techs{
@@ -154,9 +192,16 @@ section.mainSection{
     align-items: center;
 
     background-color: rgb(60, 60, 60);
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: 0 0 5px 0px rgb(122, 122, 122);
     transition: 1s ease-in-out;
+    animation: entering 1s ease-in-out;
+}
+
+.center small{
+    width: 65%;
+    text-align: center;
+    color: rgb(173, 173, 173);
 }
 
 .techs h1{
@@ -164,6 +209,15 @@ section.mainSection{
 }
 
 .techs img{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
+}
+
+.stamps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100px;
+    flex-wrap: wrap;
 }

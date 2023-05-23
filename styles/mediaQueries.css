@@ -1,0 +1,13 @@
+@media screen and (max-width: 1150px){
+
+    :root{
+        font-size: 13px;
+    }
+    section.stats{
+        height: 85%;
+    }
+
+    div.repositories{
+        flex-direction: column;
+    }
+}

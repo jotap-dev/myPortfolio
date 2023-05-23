@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/stats.css">
+    <link rel="stylesheet" href="./styles/mediaQueries.css">
     <link rel="icon" href="./assets/favicon.ico">
     <title>Portfolio</title>
 </head>
 <body>
-    <a class="arrowTop"></a>
+    <a onclick="backToTop()" class="arrowTop"></a>
     <header class="pageHeader">
-        <h2>My Portfolio</h2>
+        <h2>Portfolio</h2>
         <a onclick="switchTheme()" class="themeSwitch">
             <div class="selectTheme"></div>
             <img src="./assets/sun.svg" />
@@ -23,19 +25,44 @@
             <div class="infoContainer">
                 <strong>João Pedro de Souza</strong>
                 <img src="./assets/me.jpg" />
-                <small>"just learn!"</small>
                 <h1>Dev Fullstack</h1>
+                <small>joaopedro.stack@gmail.com</small>
+                <p><a target="_blank" href="https://www.linkedin.com/in/euJotta"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=whit" /></a><a target="_blank" href="https://github.com/Jotta-JS"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></p>
             </div>
         </main>
         <main class="techs">
             <div class="center">
-                <h1>My Tecnologies:</h1>
+                <h1>Hard Skills:</h1>
                 <div class="stamps">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
                 </div>
+                <h1>Soft Skills:</h1>
+                <small>
+                    comunication, team work, creativity, organization, problem solving
+                    adaptability.
+                </small>
             </div>
         </main>
     </section>
+    <section class="stats">
+        <h1>Projects</h1>
+        <div id="cardContainer" class="repositories">
+            <a class="card" href="">
+                <header><img src="./assets/folder.svg" /> <h3 class="projectTitle">Bold Agency</h3></header>
+                <main><small>Comercial page based in a platform template, using HTML,CSS, JS and some frameworks</small></main>
+            </a>
+            <a class="card" href="https://github.com/alissonsilvajs/SmartBus">
+                <header><img src="./assets/folder.svg" /> <h3>SmartBus</h3></header>
+                <main><small>Project about urban mobility, developed in my high school with a team of 6 people</small></main>
+            </a>
+            <a class="card" href="https://github.com/Jotta-JS/time_Capsule">
+                <header><img src="./assets/folder.svg" /> <h3>time_Capsule NLW</h3></header>
+                <main><small>This project is maked during NLW Spacetime, Rocketseat.com event.</small></main>
+            </a>
+        </div>
+        <a href="" class="seeAll">see all</a>
+    </section>
+    <section class="about"></section>    
     <script src="./animations.js"></script>
 </body>
 </html>
