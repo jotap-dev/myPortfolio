@@ -4,10 +4,71 @@
         font-size: 13px;
     }
     section.stats{
-        height: 85%;
+        height: 700px;
     }
 
     div.repositories{
         flex-direction: column;
+    }
+
+    .center{
+        width: 85%;
+    }
+
+    .center img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .infoContainer{
+        width: 90%;
+    }
+    .arrowTop{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    .themeSwitch{
+        height: 31px;
+        width: 65px;
+    }
+
+    .themeSwitch div{
+        height: 29px;
+        width: 29px;
+    }
+    section.mainSection{
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .meInfo{
+        width: 100%;
+        height: 50%;
+    }
+
+    .infoContainer{
+        height: 90%;
+    }
+
+    .techs{
+        width: 100%;
+        height: 50%;
+    }
+
+    .center{
+        height: 90%;
+    }
+    .meInfo strong{
+        font-size: 1.1rem;
+        max-width: 100px;
+        text-align: center;
+    }
+
+    a.card{
+        width: 200px;
     }
 }
