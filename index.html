@@ -5,17 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
-    <title>Document</title>
+    <link rel="icon" href="./assets/favicon.ico">
+    <title>Portfolio</title>
 </head>
 <body>
-    <section class="mainSection">
-        <header class="pageHeader">
-            <h2>meu Portfolio</h2>
-        </header>
-        <main class="pageMain">
-
+    <a class="arrowTop"></a>
+    <header class="pageHeader">
+        <h2>My Portfolio</h2>
+        <a onclick="switchTheme()" class="themeSwitch">
+            <div class="selectTheme"></div>
+            <img src="./assets/sun.svg" />
+            <img src="./assets/moon.svg" />
+        </a>
+    </header>
+    <section class="mainSection">       
+        <main class="meInfo">
+            <div class="infoContainer">
+                <strong>João Pedro de Souza</strong>
+                <img src="./assets/me.jpg" />
+                <small>"just learn!"</small>
+                <h1>Dev Fullstack</h1>
+            </div>
+        </main>
+        <main class="techs">
+            <div class="center">
+                <h1>My Tecnologies:</h1>
+                <div class="stamps">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+                </div>
+            </div>
         </main>
     </section>
-
+    <script src="./animations.js"></script>
 </body>
 </html>
