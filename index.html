@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/stats.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/projects.css">
     <link rel="stylesheet" href="./styles/mediaQueries.css">
     <link rel="icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfolio</title>
 </head>
 <body>
@@ -45,24 +48,80 @@
         </main>
     </section>
     <section class="stats">
-        <h1>Projects</h1>
+        <h1>Repositories</h1>
         <div id="cardContainer" class="repositories">
-            <a class="card" href="">
+            <a class="card" target="_blank" href="https://github.com/Jotta-JS/BoldAgency">
                 <header><img src="./assets/folder.svg" /> <h3 class="projectTitle">Bold Agency</h3></header>
                 <main><small>Comercial page based in a platform template, using HTML,CSS, JS and some frameworks</small></main>
             </a>
-            <a class="card" href="https://github.com/alissonsilvajs/SmartBus">
+            <a class="card" target="_blank" href="https://github.com/alissonsilvajs/SmartBus">
                 <header><img src="./assets/folder.svg" /> <h3>SmartBus</h3></header>
                 <main><small>Project about urban mobility, developed in my high school with a team of 6 people</small></main>
             </a>
-            <a class="card" href="https://github.com/Jotta-JS/time_Capsule">
+            <a class="card" target="_blank" href="https://github.com/Jotta-JS/time_Capsule">
                 <header><img src="./assets/folder.svg" /> <h3>time_Capsule NLW</h3></header>
                 <main><small>This project is maked during NLW Spacetime, Rocketseat.com event.</small></main>
             </a>
         </div>
-        <a href="" class="seeAll">see all</a>
+        <a href="https://github.com/Jotta-JS" class="seeAll">see all</a>
     </section>
-    <section class="about"></section>    
+    <section class="about">
+        <header class="aboutHeader"><h2>About Me</h2></header>
+        <main data-aos="flip-left" class="aboutMain">
+            <div class="aboutCard">
+                <span><img src="./assets/person.png"><h3>My Person:</h3></span>
+                <small>I am a person with strong oratory skills, I take all my jobs seriously and responsibly, especially when other people depend on it. Working in teams is one of my greatest passions, as well as making it a healthy community, I always like to use communication as the main tool to solve problems.</small>
+            </div>
+            <div class="aboutCard">
+                <span><img src="./assets/person.png"><h3>Objectives:</h3></span>
+                <small>My professional goal is to be the future leader of some team in the software field and use my knowledge to help people, I love learning and I love teaching even more, and if I can use this to impact society, I will be satisfied. I want to inspire people, develop solutions and learn from the best people possible</small>
+            </div>
+            <div class="aboutCard">
+                <span><img src="./assets/person.png"><h3>What i like:</h3></span>
+                <small>I really enjoy attending meetings, planning goals and objectives, I really enjoy meeting more experienced people and learning from them, being helpful, and challenging myself.</small>
+            </div>
+        </main>
+    </section>
+    <section class="projects">
+        <header class="projectsHeader"><h2>Projects</h2></header>
+        <main class="projectsMain">
+            <a href="https://jotta-js.github.io/time_Capsule/" target="_blank" class="project" data-aos="flip-left">
+                <h3> Start Ups and Events</h3>
+                <video src="./assets/videos/2023-05-24 11-16-42.mkv" autoplay muted loop></video>
+                <small>Project developed in NLW Spacetime, a Rocketseat.com event, contains some of the team projects I participated in</small>
+            </a>
+            <a href="https://jotta-js.github.io/BoldAgency/" target="_blank" class="project" data-aos="flip-right">
+                <h3>Bold Agency</h3>
+                <video src="./assets/videos/boldAgency_Trim.mp4" autoplay muted loop></video>
+                <small>Comercial web page maked to use some frameworks and animations, based on a other template static</small>
+            </a>
+            <a href="https://github.com/Jotta-JS/countDown" target="_blank" class="project" data-aos="flip-left">
+                <h3>Count Down</h3>
+                <video src="./assets/videos/2023-05-24 11-00-14.mkv" autoplay muted loop></video>
+                <small>the project consists in a web page maked to suport a event count down, totally dinamix with your script.</small>
+            </a>
+            <a href="https://jotta-js.github.io/myCalculatorJS/" target="_blank" class="project" data-aos="flip-right">
+                <h3>Calculator in JS</h3>
+                <video src="./assets/videos/2023-05-24 11-14-52.mkv" autoplay muted loop></video>
+                <small>Calculator maked in pure JS, based in a other template.</small>
+            </a>
+            <a href="https://github.com/Jotta-JS" class="meLink">see all</a>
+        </main>
+        <footer class="projectsFooter">
+            <h3>
+                <small>joaopedro.stack@gmail.com</small>
+                <small>(82) 99917-0292</small>
+                <p>
+                    <a target="_blank" href="https://www.linkedin.com/in/euJotta"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=whit" /></a><a target="_blank" href="https://github.com/Jotta-JS"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
+                    </a>
+                </p>
+            </h3>
+        </footer>
+    </section>    
     <script src="./animations.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+    <script>
+        AOS.init();
+    </script>       
 </body>
 </html>
