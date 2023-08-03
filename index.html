@@ -2,126 +2,171 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/stats.css">
-    <link rel="stylesheet" href="./styles/about.css">
-    <link rel="stylesheet" href="./styles/projects.css">
-    <link rel="stylesheet" href="./styles/mediaQueries.css">
-    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="icon" type="image/svg" href="./assets/icons8-android-os.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Portfolio</title>
+    <title>João Pedro</title>
 </head>
 <body>
-    <a onclick="backToTop()" class="arrowTop"></a>
-    <header class="pageHeader">
-        <h2>Portfolio</h2>
-        <a onclick="switchTheme()" class="themeSwitch">
-            <div class="selectTheme"></div>
-            <img src="./assets/sun.svg" />
-            <img src="./assets/moon.svg" />
-        </a>
-    </header>
-    <section class="mainSection">       
-        <main class="meInfo">
-            <div class="infoContainer">
-                <strong>João Pedro de Souza</strong>
-                <img src="./assets/me.jpg" />
-                <h1>Native Android Developer</h1>
-                <small>joaopedro.stack@gmail.com</small>
-                <p><a target="_blank" href="https://www.linkedin.com/in/euJotta"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=whit" /></a><a target="_blank" href="https://github.com/Jotta-JS"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a></p>
-            </div>
-        </main>
-        <main class="techs">
-            <div class="center">
-                <h1>Hard Skills:</h1>
-                <div class="stamps">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" />
-                </div>
-                <h1>Soft Skills:</h1>
-                <small>
-                    comunication, team work, creativity, organization, problem solving
-                    adaptability.
-                </small>
-            </div>
-        </main>
-    </section>
-    <section class="stats">
-        <h1>Repositories</h1>
-        <div id="cardContainer" class="repositories">
-            <a class="card" target="_blank" href="https://github.com/Jotta-JS/BoldAgency">
-                <header><img src="./assets/folder.svg" /> <h3 class="projectTitle">Bold Agency</h3></header>
-                <main><small>Comercial page based in a platform template, using HTML,CSS, JS and some frameworks</small></main>
-            </a>
-            <a class="card" target="_blank" href="https://github.com/alissonsilvajs/SmartBus">
-                <header><img src="./assets/folder.svg" /> <h3>SmartBus</h3></header>
-                <main><small>Project about urban mobility, developed in my high school with a team of 6 people</small></main>
-            </a>
-            <a class="card" target="_blank" href="https://github.com/Jotta-JS/time_Capsule">
-                <header><img src="./assets/folder.svg" /> <h3>time_Capsule NLW</h3></header>
-                <main><small>This project is maked during NLW Spacetime, Rocketseat.com event.</small></main>
-            </a>
+    <section class="main">
+        <div data-aos="fade-up" data-aos-duration="2000" class="me">
+            <h1>JOÃO PEDRO DE SOUZA RODRIGUES</h1>
+            <img src="./assets/me.jpg" />
+            <h2>DESENVOLVEDOR ANDROID NATIVO</h2>
         </div>
-        <a href="https://github.com/Jotta-JS" class="seeAll">see all</a>
+        <div data-aos="fade-up" data-aos-duration="2000"  class="stacks">
+            <h1>MINHAS TECNOLOGIAS:</h1>
+            <div class="badges">
+                <img src="./assets/icons8-android-os.svg" alt="">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" />   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" /> 
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />   
+            </div>
+            <img data-aos="fade-down" data-aos-duration="2000"  src="./assets/icons8-para-baixo-com-quadrado-64.png" />
+        </div>
     </section>
     <section class="about">
-        <header class="aboutHeader"><h2>About Me</h2></header>
-        <main data-aos="flip-down" class="aboutMain">
-            <div class="aboutCard">
-                <span><img src="./assets/person.png"><h3>My Person:</h3></span>
-                <small>I am a person with strong oratory skills, I take all my jobs seriously and responsibly, especially when other people depend on it. Working in teams is one of my greatest passions, as well as making it a healthy community, I always like to use communication as the main tool to solve problems.</small>
+        <header class="about-title">
+            <img src="./assets/icons8-dev-100.png" />
+            <h1>SOBRE MIM :</h1>
+        </header>
+        <main class="aboutMain">
+            <div data-aos="fade-up" data-aos-duration="1000" class="cardText">
+                <h1>O que faço ?</h1>
+                <p>Sou <b>Desenvolvedor Android Nativo</b>, apaixonado por linguagens orientadas a objetos e focado no uso de <b>Kotlin</b> e <b>Java</b> nos meus projetos. Estudante de <b>Engenharia de Software</b> no 2º Período (iniciado em Jan/2023) na instituição UNINTER.</p>
             </div>
-            <div class="aboutCard">
-                <span><img src="./assets/person.png"><h3>Objectives:</h3></span>
-                <small>My professional goal is to be the future leader of some team in the software field and use my knowledge to help people, I love learning and I love teaching even more, and if I can use this to impact society, I will be satisfied. I want to inspire people, develop solutions and learn from the best people possible</small>
+            <div data-aos="fade-up" data-aos-duration="1000" class="cardText">
+                <h1>Minhas experiências</h1>
+                <p>Durante o ensino médio desenvolvi diversos projetos voltados para inovação e tecnologia, com temas como: Mobilidade Urbana, Desemprego e Desenvolvimento Sustentável. Participei desde a idealização até a prototipação e apresentação em palco dos projetos, atuando formemente como líder e canal entre equipe e orientadores. Atualmente sou Desenvolvedor <b>Fullstack</b> Voluntário na Digital Diff, empresa iniciante no ramo de Marketing Digital, atuando no desenvolvimento do site e auxiliando em atividades de liderança e estratégia empresarial.</p>
             </div>
-            <div class="aboutCard">
-                <span><img src="./assets/person.png"><h3>What i like:</h3></span>
-                <small>I really enjoy attending meetings, planning goals and objectives, I really enjoy meeting more experienced people and learning from them, being helpful, and challenging myself.</small>
+            <div data-aos="fade-up" data-aos-duration="1000" class="cardText">
+                <h1>Como eu sou ?</h1>
+                <p>Sou muito <b>comunicativo</b>, é minha principal habilidade, reconheço minha facilidade de me comunicar com todo tipo de pessoa em diferentes contextos. Sou apaixonado por <b>inovação</b> e <b>trabalho em equipe</b>, sendo muito <b>fiel</b> e parceiro com quem divide o mesmo ambiente que eu. Adoro <b>desafios</b> e aprender com <b>experiências</b>, seja boa ou ruim, sempre vejo o lado <b>positivo</b> delas, como podem me beneficiar. Seja para <b>aprender</b> ou <b>ensinar</b>, quero apenas fazer parte do processo, e <b>conhecer pessoas</b> que possam compartilhar do mesmo comigo. </p>
             </div>
         </main>
     </section>
     <section class="projects">
-        <header class="projectsHeader"><h2>Projects</h2></header>
-        <main class="projectsMain">
-            <a href="https://jotta-js.github.io/time_Capsule/" target="_blank" class="project" data-aos="flip-left">
-                <h3> Start Ups and Events</h3>
-                <video src="./assets/videos/2023-05-24 11-16-42.mkv" autoplay muted loop></video>
-                <small>Project developed in NLW Spacetime, a Rocketseat.com event, contains some of the team projects I participated in</small>
-            </a>
-            <a href="https://jotta-js.github.io/BoldAgency/" target="_blank" class="project" data-aos="flip-right">
-                <h3>Bold Agency</h3>
-                <video src="./assets/videos/boldAgency_Trim.mp4" autoplay muted loop></video>
-                <small>Comercial web page maked to use some frameworks and animations, based on a other template static</small>
-            </a>
-            <a href="https://github.com/Jotta-JS/countDown" target="_blank" class="project" data-aos="flip-left">
-                <h3>Count Down</h3>
-                <video src="./assets/videos/2023-05-24 11-00-14.mkv" autoplay muted loop></video>
-                <small>the project consists in a web page maked to suport a event count down, totally dinamix with your script.</small>
-            </a>
-            <a href="https://jotta-js.github.io/myCalculatorJS/" target="_blank" class="project" data-aos="flip-right">
-                <h3>Calculator in JS</h3>
-                <video src="./assets/videos/2023-05-24 11-14-52.mkv" autoplay muted loop></video>
-                <small>Calculator maked in pure JS, based in a other template.</small>
-            </a>
-            <a href="https://github.com/Jotta-JS" target="_blank" class="meLink">see all</a>
+        <header>
+            <img src="./assets/icons8-android-os.svg" />
+            <h1>PROJETOS</h1>
+        </header>
+        <main class="projectsTable">
+            <div  data-aos="zoom-in" data-aos-duration="1000" class="project">
+                <div class="card">
+                    <img src="./assets/Capturar.PNG" />
+                    <small><b>FINANCEI</b>, App Android Nativo, MVVM + ROOM DATABASE + ACTIVITIES LIFECYCLE. (Kotlin)</small>
+                </div>
+                <div class="intents">
+                    <a target="_blank" href="https://github.com/Jotta-JS/Financei">REPOSITÓRIO</a>
+                    <a target="_blank" href="https://jotta-js.github.io/FinanceiPresents/">SITE</a>
+                </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="1000" class="project">
+                <div class="card">
+                    <img src="./assets/arduino.jpeg" />
+                    <small><b>SMART BUS</b>, IOT, MOBILIDADE URBANA PÚBLICA</small>
+                </div>
+                <div class="intents">
+                    <a target="_blank" href="https://github.com/alissonsilvajs/SmartBus">REPOSITÓRIO</a>
+                    <a target="_blank" href="" style="background-color: rgb(163, 163, 163); cursor:default;">SITE</a>
+                </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="1000" class="project">
+                <div class="card">
+                    <video src="./assets/boldAgency_Trim.mp4" autoplay loop></video>
+                    <small><b>Bold Agency</b>, landing page de site comercial</small>
+                </div>
+                <div class="intents">
+                    <a target="_blank" href="https://github.com/Jotta-JS/BoldAgency">REPOSITÓRIO</a>
+                    <a target="_blank" href="https://jotta-js.github.io/BoldAgency/">SITE</a>
+                </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="1000" class="project">
+                <div class="card">
+                    <video src="./assets/2023-05-24 11-16-42.mkv" autoplay loop></video>
+                    <small><b>TIME CAPSULE</b>, cápsula do tempo de todos os eventos que Participei</small>
+                </div>
+                <div class="intents">
+                    <a target="_blank" href="https://github.com/Jotta-JS/time_Capsule">REPOSITÓRIO</a>
+                    <a target="_blank" href="https://jotta-js.github.io/time_Capsule/">SITE</a>
+                </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="1000" class="project">
+                <div class="card">
+                    <video src="./assets/2023-05-24 11-00-14.mkv" autoplay loop></video>
+                    <small><b>COUNTDOWN</b>, desafio da Rocketseat.com</small>
+                </div>
+                <div class="intents">
+                    <a target="_blank" href="https://github.com/Jotta-JS/countDown">REPOSITÓRIO</a>
+                    <a target="_blank" href="https://jotta-js.github.io/countDown/">SITE</a>
+                </div>
+            </div>
         </main>
-        <footer class="projectsFooter">
-            <h3>
-                <small>joaopedro.stack@gmail.com</small>
-                <small>(82) 99917-0292</small>
-                <p>
-                    <a target="_blank" href="https://www.linkedin.com/in/euJotta"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=whit" /></a><a target="_blank" href="https://github.com/Jotta-JS"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
-                    </a>
-                </p>
-            </h3>
-        </footer>
-    </section>    
-    <script src="./animations.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+    </section>
+    <section class="contact">
+        <header>
+            <img src="./assets/icons8-contato-90.png" />
+            <h1>CONTATO</h1>
+        </header>
+        <main class="contactMain">
+            <a data-aos="flip-down" data-aos-duration="1000" href="https://www.linkedin.com/in/eujotta/" class="linkedin">
+                <img src="./assets/icons8-linkedin.svg" alt="">
+                <h2>LINKEDIN</h2>
+                <small>linkedin.com/in/eujotta</small>
+            </a>
+
+            <a data-aos="flip-down" data-aos-duration="1000" href="" class="github">
+                <img src="./assets/icons8-github.svg" alt="">
+                <h2>GITHUB</h2>
+                <small>github.com/Jotta-JS</small>
+            </a>
+
+            <div>
+                <a data-aos="flip-down" data-aos-duration="1000" onclick="copyEmail(), revealAlert()" class="email">
+                    <img src="./assets/icons8-nova-mensagem-96.png" alt="">
+                    <h2>EMAIL</h2>
+                    <small class="copyEmail">joaopedro.stack@gmail.com</small>
+                </a>
+                <h3>Clique para copiar</h3>
+            </div>
+            <div>
+                <a data-aos="flip-down" data-aos-duration="1000" onclick="copyNumber(), revealAlert()" class="phone" data-clipboard-target=".copyNumber">
+                    <img src="./assets/icons8-telefone-64.png" alt="">
+                    <h2>CELULAR</h2>
+                    <small class="copyNumber">(82) 99917-0292</small>
+                </a>
+                <h3>Clique para copiar</h3></div>
+        </main>
+    </section>
+    <div class="move">
+        <button onclick="openOrCloseMenu()"><img src="./assets/icons8-cardápio.svg"/></button>
+        <div id="menu_on_open">
+            <a class="links" onclick="goHome()">Início</a>
+            <a class="links" onclick="goAbout()">Sobre mim</a>
+            <a class="links" onclick="goProjects()">Projetos</a>
+            <a class="links" onclick="goContact()">Contato</a>
+        </div>
+    </div>
+
+    <div data-aos="fade-right" data-aos-duration="600" class="alert">
+
+        <div class="customAlert">
+            <img src="./assets/icons8-atenção-100.png" />
+            <h2>Texto copiado!</h2>   
+        </div>
+
+        <div class="timebar"></div>
+    </div>
+
+    <a onclick="goHome()"></a>
+
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script>       
+    </script>
 </body>
 </html>
