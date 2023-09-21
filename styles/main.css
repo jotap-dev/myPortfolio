@@ -40,6 +40,10 @@ body > a{
     cursor: pointer;   
 }
 
+section{
+    background-color: white;
+}
+
 .me,.stacks{
     width: 100%;
     height: 580px;
