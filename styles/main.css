@@ -9,7 +9,6 @@ body{
     width: 100%;
     height: 100vh;
     font-family: 'poppins', sans-serif;
-    background-color: white;
 }
 
 /*first Section*/
@@ -289,7 +288,7 @@ header.about-title{
 #menu_on_open a{
     font-size: 1.4rem;
     text-decoration: none;
-    color: black;
+    color: white;
     cursor: pointer;
     transition: 0.3s;    
 }
@@ -584,5 +583,94 @@ header.about-title{
         align-items: center;
         justify-content: center;
         gap: 80px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    :root{
+        font-size: 10px;
+    }
+
+    .badges{
+        width: 300px;
+    }
+
+    .badges img{
+        width: 50px;
+    }
+
+    .projects{
+        height: 2700px;
+    }
+
+    .project{
+        width: 300px;
+        height: 400px;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projectsTable{
+        height: 2500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .card{
+        width: 280px;
+        height: 186px;
+        padding-bottom: 50px;
+    }
+
+    .card small{
+        max-width: 250px;
+    }
+    
+    .card img{
+        width: 90%;
+    }
+    
+    .card video{
+        width: 90%;
+    }
+
+    .intents{
+        gap: 10px;
+        width: 90%;
+    }
+
+    .intents a{
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 10px;
+    }
+
+    .contactMain a{
+        width: 80%;
+        height: 70px;
+        gap: 10px;
+        justify-content: space-around;
+    }
+
+    .contactMain div {
+        width: 80%;
+    }
+
+    .contactMain div > a{
+        width: 100%;
+    }
+
+    .contactMain a > img{
+        width: 30px;
+    }
+
+    .contactMain a > h2{
+        font-size: 1.1rem;
     }
 }

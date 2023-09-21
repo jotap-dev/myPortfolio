@@ -25,10 +25,6 @@ function goProjects(){
     window.scrollTo(0,2520)
 }
 
-function goContact(){
-    window.scrollTo(0,6680)
-}
-
 function copyEmail(){
     const copyEmail = document.querySelector('.copyEmail').innerHTML
 
@@ -47,3 +43,4 @@ function revealAlert(){
 
     setTimeout(() => {customAlert.style.display = 'none'} , 2000)
 }
+
